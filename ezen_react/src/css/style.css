@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 200px auto;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid #ebebeb;
+  border-radius: 20px;
+  -webkit-box-shadow: 20px 20px 20px grey;
+          box-shadow: 20px 20px 20px grey;
+}
+
+.container p {
+  font-size: 50px;
+  text-align: center;
+}
+
+.container .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .flex-container .loginicon {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.container .flex-container input {
+  border: 1px solid #383838;
+  border-radius: 3px;
+  height: 30px;
+  margin: 10px 30px;
+}
+
+.container .flex-container input::-webkit-input-placeholder {
+  padding-left: 8px;
+  color: #7a7a7a;
+}
+
+.container .flex-container .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .flex-container .btn-group button {
+  width: 200px;
+  height: 40px;
+  margin: 0 30px;
+  background-color: #222;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.container .flex-container .btn-group button:active {
+  background-color: #3b3b3b;
+}
+/*# sourceMappingURL=style.css.map */
