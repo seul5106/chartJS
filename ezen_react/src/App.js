@@ -1,21 +1,22 @@
 import "./css/style.min.css"
-import LoginImage from "./img/LoginImage.png"
+import Login from "./components/Login"
+import React from 'react';
+import { Link, Routes, Route } from "react-router-dom";
 
+import Tab1 from "./components/tabmenu/tab1"
+import Tab2 from "./components/tabmenu/tab2"
+import Tab3 from "./components/tabmenu/tab3"
 
 function App() {
-  return (
-    <div className="container">
-      <p>로그인</p>
 
-      <div className="flex-container">
-        <img className="loginicon" src={LoginImage} alt="loginIcon" />
-        <input name="id" placeholder="아이디" />
-        <input name="pw" type="password" placeholder="비밀번호" />
-        <div className="btn-group">
-          <button>로그인</button>
-          <button>회원가입</button>
-        </div>
-      </div>
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Login />} exact={true} />
+        <Route path="/tab1" element={<Tab1 />} />
+        <Route path="/tab2" element={<Tab2 />} />
+        <Route path="/Tab3" element={<Tab3 />} />
+      </Routes>
     </div>
   );
 }
