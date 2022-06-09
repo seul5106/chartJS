@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import MainTabMenu from './tabmenu'
-const tab1 = () => {
+
+
+
+const Tab1 = (data) => {
+    const [busData, setbusData] = useState("");
+    console.log(data)
     return (
         <>
             <MainTabMenu/>
-            <h2>tab1입니다</h2>
+            <h2>{JSON.stringify(data)}</h2>
         </>
     );
 };
 
-export default tab1;
+export default Tab1;

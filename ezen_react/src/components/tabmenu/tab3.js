@@ -1,12 +1,12 @@
 import React from 'react';
 import MainTabMenu from './tabmenu'
-const tab3 = () => {
+const Tab3 = (data) => {
     return (
         <>
            <MainTabMenu/>
-           <h2>tab3입니다</h2>
+           <h2>{JSON.stringify(data)}</h2>
         </>
     );
 };
 
-export default tab3;
+export default Tab3;
