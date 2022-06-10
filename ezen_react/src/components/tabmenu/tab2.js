@@ -1,9 +1,11 @@
 import React from 'react';
-import MainTabMenu from './tabmenu'
+
 const Tab2 = (data) => {
+    
+    console.log(data)
     return (
         <>
-            <MainTabMenu/>
+           
             <h2>{JSON.stringify(data)}</h2>
         </>
     );

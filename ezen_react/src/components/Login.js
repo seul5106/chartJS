@@ -36,7 +36,7 @@ const Login = () => {
                 icon: "success"
             }).then((result) => {
                 //OK버튼을 눌렀을시 아래 페이지로 이동
-                navigate("/tab1");
+                navigate("/tabMenu/tab1");
             });
         } else {
             Swal.fire({
