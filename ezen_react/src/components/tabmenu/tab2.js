@@ -6,7 +6,7 @@ const Tab2 = (data) => {
     return (
         <>
            
-            <h2>{JSON.stringify(data)}</h2>
+            <p>{JSON.stringify(data)}</p>
         </>
     );
 };
