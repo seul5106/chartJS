@@ -4,7 +4,8 @@ import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
 // Slice에 정의된 액션함수들 참조
 import { getList } from "../../slices/tab1AxiosSlice";
-
+// ChartJS
+import Tab1Chart from "../tabChart/tab1Chart"
 
 const Tab1 = () => {
 
@@ -37,6 +38,9 @@ const Tab1 = () => {
                         <div className=''>
                             {/* 여기 아래에 쓰고 싶은 데이터 사용 */}
                             <h2>441번 버스 하차 승객 수</h2>
+                        
+                            <Tab1Chart inputData={item.CardBusTimeNew.row}/>
+
                             <table border="1" cellSpacing="0">
                                 <thead>
                                     <tr>
