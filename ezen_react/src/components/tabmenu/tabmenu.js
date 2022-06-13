@@ -6,8 +6,6 @@ import Tab1 from "./tab1"
 import Tab2 from "./tab2"
 import Tab3 from "./tab3"
 
-import AxiosGet from '../AxiosGet';
-
 //탭메뉴 활성화를 위한 스타일 컴포넌트 .active때문에 사용
 const MenuLink = styled(NavLink)`
     font-size: 20px;
@@ -42,7 +40,10 @@ const MenuLink = styled(NavLink)`
     }
 `;
 
-const tabmenu = () => {
+
+
+const Tabmenu = () => {
+
     return (
         <>
             <MenuLink to="/tabMenu/tab1">tab1</MenuLink>
@@ -50,12 +51,12 @@ const tabmenu = () => {
             <MenuLink to="/tabMenu/tab3">tab3</MenuLink>
             <hr />
             <Routes>
-                <Route path="tab1" element={<Tab1 data={AxiosGet(1, 8)} />} />
-                <Route path="tab2" element={<Tab2 data={AxiosGet(6, 12, 7730)} />} />
-                <Route path="tab3" element={<Tab3 data={AxiosGet(25, 50)} />} />
+                <Route path="tab1" element={<Tab1 />} />
+                <Route path="tab2" element={<Tab2 />} />
+                <Route path="tab3" element={<Tab3 />} />
             </Routes>
         </>
     );
 };
 
-export default tabmenu;
+export default Tabmenu;
